@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Fraud Detection</title>
+</head>
+<body>
+    <div>
+        <table border="1">
+            <tr>
+                <th>Feature</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Amount</td>
+                <td>{{ results['Amount'] }}</td>
+            </tr>
+            <tr>
+                <td>Merchant</td>
+                <td>{{ results['Merchant'] }}</td>
+            </tr>
+            <tr>
+                <td>Location</td>
+                <td>{{ results['Location'] }}</td>
+            </tr>
+            <tr>
+                <td>TimeOfDay</td>
+                <td>{{ results['TimeOfDay'] }}</td>
+            </tr>
+            <tr>
+                <td>TransactionType</td>
+                <td>{{ results['TransactionType'] }}</td>
+            </tr>
+            <tr>
+                <td>Predictions</td>
+                <td>{{ results['Predictions'] }}</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <a href="/">Reset</a>
+    </div>
+</body>
+</html>
